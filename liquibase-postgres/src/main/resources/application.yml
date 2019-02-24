@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: liquibase-postgres
+  datasource:
+    url: jdbc:postgresql://localhost/liquibase-db
+    username: postgres
+    password: postgres
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        ddl-auto: validate
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    show-sql: true

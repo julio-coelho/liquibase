@@ -1,0 +1,9 @@
+url: jdbc:postgresql://localhost/liquibase-db
+username: postgres
+password: postgres
+driver: org.postgresql.Driver
+
+databaseChangeLog:
+  - include:
+      file: migrations/001_schema_inicial.sql
+      relativeToChangelogFile: true
